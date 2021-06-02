@@ -6,24 +6,66 @@
     <title>Thomas' Github Page</title>
     <link href="build/tailwind.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100" >
-    <div id="control-height" class="fixed h-screen"></div>
-        <div class="relative text-center flex-grow" style="line-height: 75vh;" >
-            <div class="inline-block align-middle leading-normal py-8 max-w-full pointer-events-none">
-                <h1 class="text-6xl sm:text-8xl md:text-9xl tracking-in-contract-bck-top text-red-500 font-serif ">Thomas Hsu</h1>
-                <h2 class="text-black font-mono text-xl">TESTING TEXT UNDERNEATH</h2>
+
+<body class="bg-gray-500">
+
+    <div id = "navbar" class="fixed bg-black h-screen">
+        <ul class="nav-list mt-32 ml-6 w-40">
+            <li class="nav-item"><a class="p bold py-1 text-white" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="p bold py-1 text-white" href="#etc">etc</a></li>
+            <li class="nav-item"><a class="p bold py-1 text-white" href="https://github.com/thsu93">Github</a></li>
+            <li class="nav-item"><a class="p bold py-1 text-white" href="#top">Top</a></li>
+        </ul>
+    </div>
+
+    <div class = "ml-44">
+
+        <div class ="bg-blue-600 flex w-auto h-screen" id = "Top">
+            <div class="px-16 py-16 m-auto">
+                <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-center text-black font-serif">Thomas Hsu</h1>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-mono text-center">TESTING TEXT UNDERNEATH</h2>
+            </div>
+        </div>
+
+        <div class="mt-10 px-8 w-auto h-screen" id = "projects">
+            <div class="center bg-red-700 rounded-xl" style = "text-align: center">
+                <h1 class="text-white text-8xl p-4">PROJECTS</h1>
             </div>
 
-            
-        
+
+            <div class="mt-5 center grid grid-cols-1 bg-red-700 rounded-xl" style = "text-align: center">
+                <a href="https://www.github.com/thsu93/2D-Game"  target="_blank" class="center text-4xl font-mono font-bold hover:text-gray-300"> 2D Game  </a>
+                <div class="grid grid-cols-2">
+                    <div class="center h-350 m-2 max-w-md mx-auto">
+                        <img src="img/leave.jpg" class="inset-0 m-2 rounded-xl shadow-xl" alt="Train">
+                    </div>
+                    <h2 class="text-white my-2 mx-4 self-center">2-D Character action game, created in Godot. 
+                        <br><br> Designed as a single-player experience that subtly teaches the player the 
+                        basics of fighting game mechanics (movement, combos, frame data) while allowing for a more 
+                        free combo system than would be in a traditional fighter.
+                    </h2>
+                </div>                
+            </div>
+            <div class="mt-5 center grid grid-cols-1 bg-red-700 rounded-xl" style = "text-align: center">
+                <a href="https://www.google.com" target="_blank" class="center text-4xl font-mono font-bold hover:text-gray-300"> Google Test </a><div class="grid grid-cols-2">
+                <div class="m-2">filler here <br><br><br><br></div>
+                <div class="m-2">filler here</div>
+                </div>
+
+            </div>
         </div>
-    <img src="img/leave.jpg" class="mb-5 rounded-xl shadow-xl">
+        <div id="etc" class="center mt-20 mx-auto">
+            <img src="img/leave.jpg" class="w-screen h-screen rounded-xl shadow-xl" alt="Train">
+        </div>
+    </div>
+
 </body>
 
 </html>
 
 
 <!--     
+    
 
 
 
@@ -33,5 +75,4 @@
             test
         </canvas>
     </div>
-
 -->   

@@ -35,12 +35,12 @@
         <div class ="flex w-auto min-h-screen" id = "About">
             <div class="px-16 py-16 m-auto">
                 <h1 class="text-5xl sm:text-5xl md:text-6xl lg:text-8xl text-center text-blue-600">ABOUT ME</h1>
-                <h2 class="text-base text-center text-white">
+                <h2 class="text-base md:text-lg text-center text-white">
                     <br>
                     <br>
                     I'm a former medical student who's looking to transition from medicine into work in software engineering.   
                     <br><br>
-                    I've been coding since I was in middle school, and have a history of writing code for genomic data analysis and neuroradiology imaging processing.  
+                    I've been coding since I was in middle school, and have extensive history of writing code for genomic data analysis and neuroradiology imaging processing.  
                     <br><br>
                     In my free time, I enjoy building interesting programs and proof of concept video game prototypes in Unity, Unreal Engine, Godot, and RenPy. 
                     <br><br>
@@ -54,57 +54,131 @@
 
         <div class="mt-10 px-8 w-auto min-h-screen" id = "Projects">
             <div class="center bg-blue-600 rounded-xl" style = "text-align: center">
-                <h1 class="text-white sm:text-4xl md:text-6xl lg:text-8xl py-4">RECENT PROJECTS</h1>
+                <h1 class="text-white text-6xl sm:text-6xl lg:text-8xl py-4">RECENT PROJECTS</h1>
             </div>
 
             <div class="mt-5 center grid grid-cols-1 bg-blue-600 rounded-xl" style = "text-align: center">
                 <a href="https://www.github.com/thsu93/2D-Game"  target="_blank" class="center text-4xl text-white hover:text-gray-400 py-2 underline"> Fighting Game X Platformer Prototype  </a>
-                <div class="grid grid-cols-2">
-                    <div class="center h-150 m-2 max-w-md mx-auto">
-                        <img src="img/godot.png" class="inset-0 m-2 py-2 rounded-xl object-fill" alt="Godot">
-                    </div>
-                    <h2 class="text-white my-2 py-2 ml-4 mr-16 text-left">
-                        
-                        Framework and engine for a 2-D Character Action game. 
-                        <br> <br> Designed as a single-player RPG with platforming movement and fighting game mechanics, 
-                        allowing for more of a free-flowing and heavily customizable yet still relatively forgiving combat system than could be present in  
-                        a traditional player-vs-player fighting game or a standard platformer. 
-                        <br><br> Coded using GDScript, created in the <a href= "https://godotengine.org/"  target="_blank" class = "text-white hover:text-gray-400">Godot game engine</a> 
+                <div>
+                    <h2 class="text-white my-2 py-2 mx-4 text-left text-2xl">
+                        Concept:
                     </h2>
-                </div>                
+                    <h3 class ="text-left mx-16">
+                        Framework for a character action game, combining platformer and 2D fighter systems together into a single-player RPG experience.  
+                        Intended as an experiment into bridging the notoriously steep difficulty curve for fighting games with a more extensive teaching system 
+                        and reducing the initial technical demands by integrating mechanics like time-slow and combo guidance.
+                    </h3>
+                    <h2 class="text-white my-2 py-2 mx-4 text-left text-2xl">
+                        Features:
+                    </h2>
+                    <h3>
+                        <ul class="list-disc text-left mx-16">
+                            <li>Fighting game combo system with knockback and damage scaling</li>
+                            <li>Parry, Dodge, Cooldown systems</li>
+                            <li>State Machine for controlling agents</li>
+                            <li>Physics-based movement</li>
+                            <li>Time Slow/Freeze mechanics</li>
+                            <li>Enemy AI</li>
+                        </ul>
+                    </h3>
+                    <h2 class="text-white my-2 py-2 mx-4 text-left text-2xl">
+                        Tools used:
+                    </h2>
+                    <h3 class ="text-left mx-16 pb-8">
+                        GDScript, <a href= "https://godotengine.org/"  target="_blank" class = "text-white hover:text-gray-400">Godot Game Engine</a>
+                    </h3>
+                </div>
             </div>
 
             <div class="mt-5 center grid grid-cols-1 bg-blue-600 rounded-xl" style = "text-align: center">
                 <a href="https://github.com/thsu93/Noms-Calculator" target="_blank" class="center text-4xl text-white hover:text-gray-400 py-2 underline"> Noms Calorie Diary </a>
-                <div class="grid grid-cols-2">
-                    <div class="m-2">filler here </div>
-                    <h2 class="text-white my-2 py-2 mx-4 text-left ">
-                        Calorie Calculator and Diet Diary using the  <a href= "https://github.com/noahtren/noms"  target="_blank" class = "text-white hover:text-gray-400">NOMS library</a> 
-                        to draw dietary information from the USDA's FoodData Central API, collate it for nutritional analysis and compare it to Recommended Daily Intake values, and export it to JSON files.  
-                        <br><br> Work In Progress:
-                        <br> Currently updating to change from a CLI to GUI using Python's built-in TKINTER library
-                        <br><br> Coded using Python
-                    </h2>
-                </div>
+                <h2 class="text-white my-2 py-2 mx-4 text-left text-2xl">
+                    Concept:
+                </h2>
+                <h3 class ="text-left mx-16">
+                    Calorie Calculator and Diet Diary using a modified version of the 
+                    <a href= "https://github.com/noahtren/noms"  target="_blank" class = "text-white hover:text-gray-400">NOMS library</a> 
+                    to draw dietary information from the USDA's FoodData Central API, collate it for nutritional analysis,  
+                    compare it to Recommended Daily Intake values, and export the data to JSON files.  
+                </h3>
+                <h2 class="text-white my-2 py-2 mx-4 text-left text-2xl">
+                    Features:
+                </h2>
+                <h3>
+                    <ul class="list-disc text-left mx-16">
+                        <li>Search, pull results from the USDA FoodData Database</li>
+                        <li></li>
+                    </ul>
+                </h3>
+                <h2 class="text-white my-2 py-2 mx-4 text-left text-2xl">
+                    Tools used:
+                </h2>
+                <h3 class ="text-left mx-16 pb-8">
+                    Python, TKInter
+                </h3>
             </div>
 
             <div class="mt-5 center grid grid-cols-1 bg-blue-600 rounded-xl" style = "text-align: center">
-                <a href="https://github.com/thsu93/CardGame2" target="_blank" class="center text-4xl text-white hover:text-gray-400 py-2 underline"> Simultaneous-Play Card Game Engine Prototype </a><div class="grid grid-cols-2">
-                <div class="m-2">filler here <br></div>
-                <h2 class="text-white my-2 py-2 mx-4 text-left ">
-                    Prototype of a single or two-player deckbuilding card game. Mechanics focused on selecting, hiding, and then simultaneously revealing different cards in play.  
-                    Tracks mouse movements, playzones, and card history. Allows for persistent field effects and card upgrading.  
-                    <br><br> Coded using C# in the <a href= "https://unity.com/"  target="_blank" class = "text-white hover:text-gray-400">Unity game engine</a> 
-                </h2>
+                <a href="https://github.com/thsu93/CardGame2" target="_blank" class="center text-4xl text-white hover:text-gray-400 py-2 underline"> Simultaneous-Play Card Game Engine Prototype </a>
+                <div>
+                    <h2 class="text-white my-2 py-2 mx-4 text-left text-2xl">
+                        Concept:
+                    </h2>
+                    <h3 class ="text-left mx-16">
+                        Prototype of a single or two-player deckbuilding card game. Mechanics focused on selecting, hiding, and then simultaneously revealing different cards in play.  
+                        Tracks mouse movements, playzones, and card history. Allows for persistent field effects and card upgrading.  
+                    </h3>
+                    <h2 class="text-white my-2 py-2 mx-4 text-left text-2xl">
+                        Features:
+                    </h2>
+                    <h3>
+                        <ul class="list-disc text-left mx-16">
+                            <li>Fighting game combo system with knockback and damage scaling</li>
+                            <li>Parry, Dodge, Cooldown systems</li>
+                            <li>State Machine for controlling agents</li>
+                            <li>Physics-based movement</li>
+                            <li>Time Slow/Freeze mechanics</li>
+                            <li>Enemy AI</li>
+                        </ul>
+                    </h3>
+                    <h2 class="text-white my-2 py-2 mx-4 text-left text-2xl">
+                        Tools used:
+                    </h2>
+                    <h3 class ="text-left mx-16 pb-8">
+                        C#, <a href= "https://unity.com/"  target="_blank" class = "text-white hover:text-gray-400">Unity game engine</a> 
+                    </h3>
                 </div>
+                </h2>
             </div>
             <div class="mt-5 center grid grid-cols-1 bg-blue-600 rounded-xl" style = "text-align: center">
-                <a href="https://github.com/thsu93/isometric_game" target="_blank" class="center text-4xl text-white hover:text-gray-400 py-2 underline"> Isometric Roguelike Project </a><div class="grid grid-cols-2">
-                <div class="m-2">filler here <br></div>
-                <h2 class="text-white my-2 py-2 mx-4 text-left ">
-                    Isometric dungeon crawler in the style of Diablo II, with a unique combination-based spellcasting system and health meters tied to magic abilities.  
-                    <br><br> Coded using GDScript, created in the <a href= "https://godotengine.org/"  target="_blank" class = "text-white hover:text-gray-400">Godot game engine</a> 
-                </h2>
+                <a href="https://github.com/thsu93/isometric_game" target="_blank" class="center text-4xl text-white hover:text-gray-400 py-2 underline"> Isometric Roguelike Project </a>
+                
+                <div>
+                    <h2 class="text-white my-2 py-2 mx-4 text-left text-2xl">
+                        Concept:
+                    </h2>
+                    <h3 class ="text-left mx-16">
+                        Isometric dungeon crawler in the style of Diablo II, with a unique combination-based spellcasting system and health meters tied to magic abilities.
+                    </h3>
+                    <h2 class="text-white my-2 py-2 mx-4 text-left text-2xl">
+                        Features:
+                    </h2>
+                    <h3>
+                        <ul class="list-disc text-left mx-16">
+                            <li>Fighting game combo system with knockback and damage scaling</li>
+                            <li>Parry, Dodge, Cooldown systems</li>
+                            <li>State Machine for controlling agents</li>
+                            <li>Physics-based movement</li>
+                            <li>Time Slow/Freeze mechanics</li>
+                            <li>Enemy AI</li>
+                        </ul>
+                    </h3>
+                    <h2 class="text-white my-2 py-2 mx-4 text-left text-2xl">
+                        Tools used:
+                    </h2>
+                    <h3 class ="text-left mx-16 pb-8">
+                        GDScript, <a href= "https://godotengine.org/"  target="_blank" class = "text-white hover:text-gray-400">Godot Game Engine</a>
+                    </h3>
                 </div>
             </div>
         </div>
